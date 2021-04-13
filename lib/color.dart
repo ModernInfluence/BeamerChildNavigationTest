@@ -14,6 +14,7 @@ class ColorLocation extends BeamLocation {
       BeamPage(
         key: ValueKey('color-${state.pathParameters['color']}'),
         child: ColorWidget(state.pathParameters['color']),
+        type: BeamPageType.fadeTransition,
       )
     ];
   }
